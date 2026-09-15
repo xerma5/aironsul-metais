@@ -46,6 +46,7 @@
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
   <header class="site-header" id="topo">
     <div class="header-inner shell">
@@ -66,7 +67,7 @@
         <span></span><span></span>
       </button>
     </div>
-    <nav class="mobile-nav" id="mobile-menu" aria-label="Navegação móvel" hidden>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Navegação móvel" aria-hidden="true">
       <a href="#inicio">Início</a>
       <a href="#empresa">Empresa</a>
       <a href="#fundicao">Fundição</a>
@@ -79,7 +80,7 @@
 
   <main id="conteudo">
     <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/images/aironsul-hero-metal-fundido-1200.webp" aria-hidden="true">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="./images/aironsul-hero-metal-fundido-1200.webp" aria-hidden="true">
         <source src="./videos/aironsul-metal-fundido-horizontal.mp4" type="video/mp4">
       </video>
       <div class="hero-shade"></div>
@@ -98,6 +99,9 @@
         <div class="hero-index" aria-hidden="true"><strong>01</strong><span>Indústria real<br>Operação real</span></div>
       </div>
       <a class="scroll-cue" href="#credibilidade" aria-label="Continuar para a próxima seção"><span></span> Desça para conhecer</a>
+      <button class="hero-video-toggle" type="button" aria-label="Pausar vídeo de fundo" aria-pressed="false">
+        <span aria-hidden="true"></span><b>Pausar vídeo</b>
+      </button>
     </section>
 
     <section class="trust-bar" id="credibilidade" aria-label="Indicadores de credibilidade">
@@ -118,9 +122,9 @@
           <p>Por meio deste espaço, apresentamos um pouco da nossa estrutura, produção e rotina industrial, aproximando clientes e parceiros da AironSul Metais.</p>
           <a class="text-link" href="#fundicao">Conheça a operação <span aria-hidden="true">→</span></a>
         </div>
-        <figure class="media-frame about-media reveal image-trigger" data-full="/images/aironsul-estrutura-painel-1200.webp" data-alt="Equipamento industrial azul com painel de controle na estrutura da AironSul Metais">
+        <figure class="media-frame about-media reveal image-trigger" data-full="./images/aironsul-estrutura-painel-1200.webp" data-alt="Equipamento industrial azul com painel de controle na estrutura da AironSul Metais">
           <picture>
-            <source srcset="/images/aironsul-estrutura-painel-640.webp 640w, ./images/aironsul-estrutura-painel-960.webp 960w, ./images/aironsul-estrutura-painel-1200.webp 1200w" sizes="(max-width: 850px) 100vw, 58vw" type="image/webp">
+            <source srcset="./images/aironsul-estrutura-painel-640.webp 640w, ./images/aironsul-estrutura-painel-960.webp 960w, ./images/aironsul-estrutura-painel-1200.webp 1200w" sizes="(max-width: 850px) 100vw, 58vw" type="image/webp">
             <img src="./images/aironsul-estrutura-painel-1200.webp" alt="Equipamento industrial azul com painel de controle na estrutura da AironSul Metais" width="1200" height="1600" loading="lazy">
           </picture>
           <figcaption><span>Estrutura AironSul Metais</span><b>Ampliar ↗</b></figcaption>
@@ -137,7 +141,7 @@
         </div>
         <button class="video-card reveal" type="button" data-video-open aria-label="Reproduzir vídeo do processo de fundição">
           <picture>
-            <source srcset="/images/aironsul-processo-metal-fundido-640.webp 640w, ./images/aironsul-processo-metal-fundido-960.webp 960w, ./images/aironsul-processo-metal-fundido-1200.webp 1200w" sizes="(max-width: 850px) 100vw, 52vw" type="image/webp">
+            <source srcset="./images/aironsul-processo-metal-fundido-640.webp 640w, ./images/aironsul-processo-metal-fundido-960.webp 960w, ./images/aironsul-processo-metal-fundido-1200.webp 1200w" sizes="(max-width: 850px) 100vw, 52vw" type="image/webp">
             <img src="./images/aironsul-processo-metal-fundido-1200.webp" alt="Metal em alta temperatura durante operação real de fundição" width="1200" height="1200" loading="lazy">
           </picture>
           <span class="play"><i aria-hidden="true"></i></span>
@@ -157,15 +161,15 @@
           <p>Máquinas, áreas produtivas e equipamentos compõem uma estrutura preparada para atender diferentes demandas de fundição.</p>
         </div>
         <div class="structure-editorial">
-          <figure class="structure-main reveal image-trigger" data-full="/images/aironsul-maquina-azul-laranja-aprimorada-1086.webp" data-alt="Máquina industrial azul e laranja de grande porte na AironSul Metais">
+          <figure class="structure-main reveal image-trigger" data-full="./images/aironsul-maquina-azul-laranja-aprimorada-1086.webp" data-alt="Máquina industrial azul e laranja de grande porte na AironSul Metais">
             <picture>
-              <source srcset="/images/aironsul-maquina-azul-laranja-aprimorada-640.webp 640w, ./images/aironsul-maquina-azul-laranja-aprimorada-960.webp 960w, ./images/aironsul-maquina-azul-laranja-aprimorada-1086.webp 1086w" sizes="(max-width: 850px) 100vw, 60vw" type="image/webp">
+              <source srcset="./images/aironsul-maquina-azul-laranja-aprimorada-640.webp 640w, ./images/aironsul-maquina-azul-laranja-aprimorada-960.webp 960w, ./images/aironsul-maquina-azul-laranja-aprimorada-1086.webp 1086w" sizes="(max-width: 850px) 100vw, 60vw" type="image/webp">
               <img src="./images/aironsul-maquina-azul-laranja-aprimorada-1086.webp" alt="Máquina industrial azul e laranja de grande porte na AironSul Metais" width="1086" height="1536" loading="lazy">
             </picture>
             <figcaption><span>Equipamento industrial</span><b>01</b></figcaption>
           </figure>
           <div class="structure-side">
-            <figure class="reveal image-trigger" data-full="/images/aironsul-estrutura-painel-1200.webp" data-alt="Painel e equipamento industrial da AironSul Metais">
+            <figure class="reveal image-trigger" data-full="./images/aironsul-estrutura-painel-1200.webp" data-alt="Painel e equipamento industrial da AironSul Metais">
               <img src="./images/aironsul-estrutura-painel-960.webp" alt="Painel e equipamento industrial da AironSul Metais" width="960" height="1280" loading="lazy">
               <figcaption><span>Controle e estrutura</span><b>02</b></figcaption>
             </figure>
@@ -181,9 +185,9 @@
         <h2 id="production-title">Do ambiente fabril ao resultado final.</h2>
         <p>Os registros da produção ajudam a mostrar de perto a rotina da fundição, os equipamentos utilizados e as peças resultantes desse trabalho.</p>
       </div>
-      <figure class="production-wide reveal image-trigger" data-full="/images/aironsul-linha-producao-899.webp" data-alt="Área produtiva da AironSul Metais com estruturas alinhadas">
+      <figure class="production-wide reveal image-trigger" data-full="./images/aironsul-linha-producao-899.webp" data-alt="Área produtiva da AironSul Metais com estruturas alinhadas">
         <picture>
-          <source srcset="/images/aironsul-linha-producao-640.webp 640w, ./images/aironsul-linha-producao-899.webp 899w" sizes="100vw" type="image/webp">
+          <source srcset="./images/aironsul-linha-producao-640.webp 640w, ./images/aironsul-linha-producao-899.webp 899w" sizes="100vw" type="image/webp">
           <img src="./images/aironsul-linha-producao-899.webp" alt="Área produtiva da AironSul Metais com estruturas alinhadas" width="899" height="1599" loading="lazy">
         </picture>
         <figcaption><span>Área de produção</span><b>Araquari · SC</b></figcaption>
@@ -192,9 +196,9 @@
 
     <section class="section parts" id="pecas" aria-labelledby="parts-title">
       <div class="shell parts-layout">
-        <figure class="parts-image reveal image-trigger" data-full="/images/aironsul-pecas-fundidas-899.webp" data-alt="Peças fundidas em primeiro plano na produção da AironSul Metais">
+        <figure class="parts-image reveal image-trigger" data-full="./images/aironsul-pecas-fundidas-899.webp" data-alt="Peças fundidas em primeiro plano na produção da AironSul Metais">
           <picture>
-            <source srcset="/images/aironsul-pecas-fundidas-640.webp 640w, ./images/aironsul-pecas-fundidas-899.webp 899w" sizes="(max-width: 850px) 100vw, 58vw" type="image/webp">
+            <source srcset="./images/aironsul-pecas-fundidas-640.webp 640w, ./images/aironsul-pecas-fundidas-899.webp 899w" sizes="(max-width: 850px) 100vw, 58vw" type="image/webp">
             <img src="./images/aironsul-pecas-fundidas-899.webp" alt="Peças fundidas em primeiro plano na produção da AironSul Metais" width="899" height="1599" loading="lazy">
           </picture>
           <span class="detail-crop detail-one" aria-hidden="true"></span>
@@ -226,19 +230,19 @@
           <p>Um pouco da nossa estrutura, produção e rotina industrial.</p>
         </div>
         <div class="gallery-grid">
-          <button class="gallery-item gallery-tall reveal image-trigger" type="button" data-full="/images/aironsul-maquina-azul-laranja-aprimorada-1086.webp" data-alt="Máquina industrial azul e laranja na fábrica">
+          <button class="gallery-item gallery-tall reveal image-trigger" type="button" data-full="./images/aironsul-maquina-azul-laranja-aprimorada-1086.webp" data-alt="Máquina industrial azul e laranja na fábrica">
             <img src="./images/aironsul-maquina-azul-laranja-aprimorada-640.webp" alt="Máquina industrial azul e laranja na fábrica" width="640" height="905" loading="lazy"><span>Estrutura <b>Ampliar ↗</b></span>
           </button>
-          <button class="gallery-item gallery-wide reveal image-trigger" type="button" data-full="/images/aironsul-hero-metal-fundido-1200.webp" data-alt="Metal líquido durante o processo de fundição">
+          <button class="gallery-item gallery-wide reveal image-trigger" type="button" data-full="./images/aironsul-hero-metal-fundido-1200.webp" data-alt="Metal líquido durante o processo de fundição">
             <img src="./images/aironsul-hero-metal-fundido-960.webp" alt="Metal líquido durante o processo de fundição" width="960" height="960" loading="lazy"><span>Fundição <b>Ampliar ↗</b></span>
           </button>
-          <button class="gallery-item reveal image-trigger" type="button" data-full="/images/aironsul-estrutura-painel-1200.webp" data-alt="Equipamento azul e painel de controle industrial">
+          <button class="gallery-item reveal image-trigger" type="button" data-full="./images/aironsul-estrutura-painel-1200.webp" data-alt="Equipamento azul e painel de controle industrial">
             <img src="./images/aironsul-estrutura-painel-640.webp" alt="Equipamento azul e painel de controle industrial" width="640" height="853" loading="lazy"><span>Equipamentos <b>Ampliar ↗</b></span>
           </button>
-          <button class="gallery-item reveal image-trigger" type="button" data-full="/images/aironsul-linha-producao-899.webp" data-alt="Linha de produção dentro da fundição">
+          <button class="gallery-item reveal image-trigger" type="button" data-full="./images/aironsul-linha-producao-899.webp" data-alt="Linha de produção dentro da fundição">
             <img src="./images/aironsul-linha-producao-640.webp" alt="Linha de produção dentro da fundição" width="640" height="1138" loading="lazy"><span>Produção <b>Ampliar ↗</b></span>
           </button>
-          <button class="gallery-item gallery-wide reveal image-trigger" type="button" data-full="/images/aironsul-pecas-fundidas-899.webp" data-alt="Peças fundidas em detalhe">
+          <button class="gallery-item gallery-wide reveal image-trigger" type="button" data-full="./images/aironsul-pecas-fundidas-899.webp" data-alt="Peças fundidas em detalhe">
             <img src="./images/aironsul-pecas-fundidas-640.webp" alt="Peças fundidas em detalhe" width="640" height="1138" loading="lazy"><span>Peças <b>Ampliar ↗</b></span>
           </button>
         </div>
@@ -313,6 +317,13 @@
     <div class="shell footer-bottom"><span>© 2026 AironSul Metais. Todos os direitos reservados.</span><a href="#topo">Voltar ao topo ↑</a></div>
   </footer>
 
+  <div class="mobile-quick-actions" aria-label="Ações rápidas">
+    <a data-company-link="phone" href="tel:+554734391072"><span aria-hidden="true">☎</span> Ligar</a>
+    <a href="#contato"><span aria-hidden="true">↗</span> Contato</a>
+  </div>
+
+  <button class="back-to-top" type="button" aria-label="Voltar ao topo"><span aria-hidden="true">↑</span></button>
+
   <dialog class="media-dialog" id="image-dialog" aria-label="Visualização ampliada">
     <button class="dialog-close" type="button" aria-label="Fechar imagem">×</button>
     <img alt="">
@@ -320,7 +331,7 @@
 
   <dialog class="media-dialog video-dialog" id="video-dialog" aria-label="Vídeo do processo de fundição">
     <button class="dialog-close" type="button" aria-label="Fechar vídeo">×</button>
-    <video controls playsinline preload="none" poster="/images/aironsul-processo-metal-fundido-1200.webp">
+    <video controls playsinline preload="none" poster="./images/aironsul-processo-metal-fundido-1200.webp">
       <source src="./videos/aironsul-metal-fundido-vertical.mp4" type="video/mp4">
     </video>
   </dialog>
