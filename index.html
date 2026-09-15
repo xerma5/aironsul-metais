@@ -86,9 +86,14 @@
 
   <main id="conteudo">
     <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="./images/aironsul-hero-metal-fundido-1200.webp" aria-hidden="true">
-        <source src="./videos/aironsul-fundicao-fundo.mp4" type="video/mp4">
-      </video>
+      <div class="hero-video-stage" aria-hidden="true">
+        <video class="hero-video hero-video-blur" autoplay muted loop playsinline preload="auto" tabindex="-1">
+          <source src="./videos/aironsul-fundicao-fundo.mp4" type="video/mp4">
+        </video>
+        <video class="hero-video hero-video-main" autoplay muted loop playsinline preload="auto" poster="./images/aironsul-hero-metal-fundido-1200.webp" tabindex="-1">
+          <source src="./videos/aironsul-fundicao-fundo.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="hero-shade"></div>
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-content shell">
@@ -105,9 +110,6 @@
         <div class="hero-index" aria-hidden="true"><strong>01</strong><span>Indústria real<br>Operação real</span></div>
       </div>
       <a class="scroll-cue" href="#credibilidade" aria-label="Continuar para a próxima seção"><span></span> Desça para conhecer</a>
-      <button class="hero-video-toggle" type="button" aria-label="Pausar vídeo de fundo" aria-pressed="false">
-        <span aria-hidden="true"></span><b>Pausar vídeo</b>
-      </button>
     </section>
 
     <section class="trust-bar" id="credibilidade" aria-label="Indicadores de credibilidade">

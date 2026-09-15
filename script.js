@@ -6,8 +6,7 @@
   const progressBar = document.querySelector('.scroll-progress');
   const backToTop = document.querySelector('.back-to-top');
   const hero = document.querySelector('.hero');
-  const heroVideo = document.querySelector('.hero-video');
-  const heroVideoToggle = document.querySelector('.hero-video-toggle');
+  const heroVideos = [...document.querySelectorAll('.hero-video')];
   const imageDialog = document.querySelector('#image-dialog');
   const videoDialog = document.querySelector('#video-dialog');
   const dialogImage = imageDialog?.querySelector('img');
@@ -132,25 +131,27 @@
     });
   }
 
-  const syncHeroVideoControl = (paused) => {
-    if (!heroVideoToggle) return;
-    heroVideoToggle.setAttribute('aria-pressed', String(paused));
-    heroVideoToggle.setAttribute('aria-label', paused ? 'Reproduzir vídeo de fundo' : 'Pausar vídeo de fundo');
-    const label = heroVideoToggle.querySelector('b');
-    if (label) label.textContent = paused ? 'Reproduzir vídeo' : 'Pausar vídeo';
+  const keepHeroPlaying = () => {
+    heroVideos.forEach((video) => {
+      video.muted = true;
+      video.defaultMuted = true;
+      video.loop = true;
+      video.play().catch(() => {});
+    });
   };
 
-  if (reduceMotion.matches) {
-    heroVideo?.pause();
-    syncHeroVideoControl(true);
-  }
-
-  heroVideoToggle?.addEventListener('click', () => {
-    if (!heroVideo) return;
-    if (heroVideo.paused) heroVideo.play().catch(() => {});
-    else heroVideo.pause();
-    syncHeroVideoControl(heroVideo.paused);
+  heroVideos.forEach((video) => {
+    video.addEventListener('loadeddata', keepHeroPlaying, { once: true });
+    video.addEventListener('pause', () => {
+      if (!document.hidden) requestAnimationFrame(keepHeroPlaying);
+    });
   });
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) keepHeroPlaying();
+  });
+  document.addEventListener('pointerdown', keepHeroPlaying, { once: true, passive: true });
+  window.addEventListener('pageshow', keepHeroPlaying);
+  keepHeroPlaying();
 
   const openImage = (trigger) => {
     if (!imageDialog || !dialogImage) return;
