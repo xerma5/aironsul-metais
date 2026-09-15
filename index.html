@@ -51,6 +51,9 @@
     <symbol id="icon-down" viewBox="0 0 24 24"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></symbol>
     <symbol id="icon-up" viewBox="0 0 24 24"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></symbol>
     <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"></path></symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></symbol>
+    <symbol id="icon-factory" viewBox="0 0 24 24"><path d="M3 21V9l6 3V9l6 3V4h4v17"></path><path d="M3 21h18"></path><path d="M7 17h1"></path><path d="M12 17h1"></path><path d="M17 17h1"></path></symbol>
+    <symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="m21 15-5-5L5 21"></path></symbol>
   </svg>
   <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
@@ -314,15 +317,48 @@
   </main>
 
   <footer class="footer">
-    <div class="shell footer-grid">
-      <div class="footer-brand">
-        <img src="./brand/aironsul-metais-logo.png" alt="AironSul Metais" width="900" height="728" loading="lazy">
-        <p>Fundição industrial localizada em Araquari, Santa Catarina.</p>
+    <div class="footer-cta">
+      <div class="shell footer-cta-inner">
+        <div>
+          <p class="footer-kicker">Atendimento direto</p>
+          <h2>Vamos conversar sobre sua necessidade em fundição?</h2>
+        </div>
+        <div class="footer-actions">
+          <a class="button footer-button-primary" data-company-link="phone" href="tel:+554734391072"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg> Ligar agora</a>
+          <a class="button footer-button-secondary" data-company-link="maps" href="https://www.google.com/maps/search/?api=1&query=R.%20Dr.%20Adolfo%20Bezerra%20de%20Menezes%2C%20249%2C%20Araquari%20SC" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg> Como chegar</a>
+        </div>
       </div>
-      <div><p class="footer-label">Navegação</p><nav aria-label="Navegação do rodapé"><a href="#empresa">Empresa</a><a href="#fundicao">Fundição</a><a href="#estrutura">Estrutura</a><a href="#galeria">Galeria</a><a href="#localizacao">Localização</a><a href="#contato">Contato</a></nav></div>
-      <div class="footer-contact"><p class="footer-label">Contato</p><address>R. Dr. Adolfo Bezerra de Menezes, 249<br>Porto Grande · Araquari · SC<br>89245-000</address><a data-company-link="phone" href="tel:+554734391072" data-company="phone">(47) 3439-1072</a><span>CNPJ: <b data-company="cnpj">24.684.711/0001-90</b></span></div>
     </div>
-    <div class="shell footer-bottom"><span>© 2026 AironSul Metais. Todos os direitos reservados.</span><a href="#topo">Voltar ao topo <svg class="icon" aria-hidden="true"><use href="#icon-up"></use></svg></a></div>
+    <div class="shell footer-main">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="./brand/aironsul-metais-logo.png" alt="AironSul Metais" width="900" height="728" loading="lazy">
+          <p>Fundição industrial localizada em Araquari, Santa Catarina.</p>
+          <span class="footer-company-id"><svg class="icon" aria-hidden="true"><use href="#icon-factory"></use></svg> CNPJ: <b data-company="cnpj">24.684.711/0001-90</b></span>
+        </div>
+        <div class="footer-navigation">
+          <p class="footer-label">Navegação</p>
+          <nav aria-label="Navegação do rodapé"><a href="#empresa">Empresa</a><a href="#fundicao">Fundição</a><a href="#estrutura">Estrutura</a><a href="#galeria">Galeria</a><a href="#localizacao">Localização</a><a href="#contato">Contato</a></nav>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-label">Contato</p>
+          <a class="footer-contact-card" data-company-link="phone" href="tel:+554734391072">
+            <span class="footer-icon"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg></span>
+            <span><small>Telefone</small><strong data-company="phone">(47) 3439-1072</strong></span>
+          </a>
+          <a class="footer-contact-card" data-company-link="maps" href="https://www.google.com/maps/search/?api=1&query=R.%20Dr.%20Adolfo%20Bezerra%20de%20Menezes%2C%20249%2C%20Araquari%20SC" target="_blank" rel="noopener">
+            <span class="footer-icon"><svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg></span>
+            <span><small>Endereço</small><strong><span data-company="street">R. Dr. Adolfo Bezerra de Menezes, 249</span><br>Porto Grande · Araquari · SC</strong></span>
+          </a>
+        </div>
+        <div class="footer-shortcuts">
+          <p class="footer-label">Acesso rápido</p>
+          <a href="#estrutura"><svg class="icon shortcut-icon" aria-hidden="true"><use href="#icon-factory"></use></svg><span><strong>Nossa estrutura</strong><small>Equipamentos e operação</small></span><svg class="icon shortcut-arrow" aria-hidden="true"><use href="#icon-up-right"></use></svg></a>
+          <a href="#galeria"><svg class="icon shortcut-icon" aria-hidden="true"><use href="#icon-image"></use></svg><span><strong>Galeria</strong><small>Fotos da produção</small></span><svg class="icon shortcut-arrow" aria-hidden="true"><use href="#icon-up-right"></use></svg></a>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 AironSul Metais. Todos os direitos reservados.</span><a href="#topo">Voltar ao topo <svg class="icon" aria-hidden="true"><use href="#icon-up"></use></svg></a></div>
+    </div>
   </footer>
 
   <div class="mobile-quick-actions" aria-label="Ações rápidas">
