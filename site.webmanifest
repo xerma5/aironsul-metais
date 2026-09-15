@@ -1,0 +1,12 @@
+{
+  "name": "AironSul Metais",
+  "short_name": "AironSul",
+  "description": "Fundição industrial em Araquari, Santa Catarina.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#03131f",
+  "theme_color": "#061d2d",
+  "icons": [
+    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

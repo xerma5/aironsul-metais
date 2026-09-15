@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xerma5.github.io/aironsul-metais/sitemap.xml
