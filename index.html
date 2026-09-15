@@ -46,6 +46,12 @@
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></symbol>
+    <symbol id="icon-down" viewBox="0 0 24 24"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></symbol>
+    <symbol id="icon-up" viewBox="0 0 24 24"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"></path></symbol>
+  </svg>
   <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
   <header class="site-header" id="topo">
@@ -62,7 +68,7 @@
         <a href="#localizacao">Localização</a>
         <a href="#contato">Contato</a>
       </nav>
-      <a class="header-cta" href="#contato">Fale conosco <span aria-hidden="true">↗</span></a>
+      <a class="header-cta" href="#contato">Fale conosco <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></a>
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span>
       </button>
@@ -81,7 +87,7 @@
   <main id="conteudo">
     <section class="hero" id="inicio" aria-labelledby="hero-title">
       <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="./images/aironsul-hero-metal-fundido-1200.webp" aria-hidden="true">
-        <source src="./videos/aironsul-metal-fundido-horizontal.mp4" type="video/mp4">
+        <source src="./videos/aironsul-fundicao-fundo.mp4" type="video/mp4">
       </video>
       <div class="hero-shade"></div>
       <div class="hero-grid" aria-hidden="true"></div>
@@ -91,7 +97,7 @@
           <h1 id="hero-title">Fundição que transforma metal em soluções para a indústria.</h1>
           <p class="hero-lead">Conheça a estrutura, o processo produtivo e o trabalho desenvolvido pela AironSul Metais em Araquari, Santa Catarina.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#estrutura">Conheça nossa estrutura <span aria-hidden="true">↓</span></a>
+            <a class="button button-primary" href="#estrutura">Conheça nossa estrutura <svg class="icon" aria-hidden="true"><use href="#icon-down"></use></svg></a>
             <a class="button button-ghost" href="#contato">Entre em contato</a>
           </div>
         </div>
@@ -127,7 +133,7 @@
             <source srcset="./images/aironsul-estrutura-painel-640.webp 640w, ./images/aironsul-estrutura-painel-960.webp 960w, ./images/aironsul-estrutura-painel-1200.webp 1200w" sizes="(max-width: 850px) 100vw, 58vw" type="image/webp">
             <img src="./images/aironsul-estrutura-painel-1200.webp" alt="Equipamento industrial azul com painel de controle na estrutura da AironSul Metais" width="1200" height="1600" loading="lazy">
           </picture>
-          <figcaption><span>Estrutura AironSul Metais</span><b>Ampliar ↗</b></figcaption>
+          <figcaption><span>Estrutura AironSul Metais</span><b>Ampliar <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></b></figcaption>
         </figure>
       </div>
     </section>
@@ -231,19 +237,19 @@
         </div>
         <div class="gallery-grid">
           <button class="gallery-item gallery-tall reveal image-trigger" type="button" data-full="./images/aironsul-maquina-azul-laranja-aprimorada-1086.webp" data-alt="Máquina industrial azul e laranja na fábrica">
-            <img src="./images/aironsul-maquina-azul-laranja-aprimorada-640.webp" alt="Máquina industrial azul e laranja na fábrica" width="640" height="905" loading="lazy"><span>Estrutura <b>Ampliar ↗</b></span>
+            <img src="./images/aironsul-maquina-azul-laranja-aprimorada-640.webp" alt="Máquina industrial azul e laranja na fábrica" width="640" height="905" loading="lazy"><span>Estrutura <b>Ampliar <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></b></span>
           </button>
           <button class="gallery-item gallery-wide reveal image-trigger" type="button" data-full="./images/aironsul-hero-metal-fundido-1200.webp" data-alt="Metal líquido durante o processo de fundição">
-            <img src="./images/aironsul-hero-metal-fundido-960.webp" alt="Metal líquido durante o processo de fundição" width="960" height="960" loading="lazy"><span>Fundição <b>Ampliar ↗</b></span>
+            <img src="./images/aironsul-hero-metal-fundido-960.webp" alt="Metal líquido durante o processo de fundição" width="960" height="960" loading="lazy"><span>Fundição <b>Ampliar <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></b></span>
           </button>
           <button class="gallery-item reveal image-trigger" type="button" data-full="./images/aironsul-estrutura-painel-1200.webp" data-alt="Equipamento azul e painel de controle industrial">
-            <img src="./images/aironsul-estrutura-painel-640.webp" alt="Equipamento azul e painel de controle industrial" width="640" height="853" loading="lazy"><span>Equipamentos <b>Ampliar ↗</b></span>
+            <img src="./images/aironsul-estrutura-painel-640.webp" alt="Equipamento azul e painel de controle industrial" width="640" height="853" loading="lazy"><span>Equipamentos <b>Ampliar <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></b></span>
           </button>
           <button class="gallery-item reveal image-trigger" type="button" data-full="./images/aironsul-linha-producao-899.webp" data-alt="Linha de produção dentro da fundição">
-            <img src="./images/aironsul-linha-producao-640.webp" alt="Linha de produção dentro da fundição" width="640" height="1138" loading="lazy"><span>Produção <b>Ampliar ↗</b></span>
+            <img src="./images/aironsul-linha-producao-640.webp" alt="Linha de produção dentro da fundição" width="640" height="1138" loading="lazy"><span>Produção <b>Ampliar <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></b></span>
           </button>
           <button class="gallery-item gallery-wide reveal image-trigger" type="button" data-full="./images/aironsul-pecas-fundidas-899.webp" data-alt="Peças fundidas em detalhe">
-            <img src="./images/aironsul-pecas-fundidas-640.webp" alt="Peças fundidas em detalhe" width="640" height="1138" loading="lazy"><span>Peças <b>Ampliar ↗</b></span>
+            <img src="./images/aironsul-pecas-fundidas-640.webp" alt="Peças fundidas em detalhe" width="640" height="1138" loading="lazy"><span>Peças <b>Ampliar <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></b></span>
           </button>
         </div>
       </div>
@@ -272,7 +278,7 @@
             <span>Araquari · SC</span>
             <span>89245-000</span>
           </address>
-          <a class="button button-dark" data-company-link="maps" href="https://www.google.com/maps/search/?api=1&query=R.%20Dr.%20Adolfo%20Bezerra%20de%20Menezes%2C%20249%2C%20Araquari%20SC" target="_blank" rel="noopener">Abrir no Google Maps <span aria-hidden="true">↗</span></a>
+          <a class="button button-dark" data-company-link="maps" href="https://www.google.com/maps/search/?api=1&query=R.%20Dr.%20Adolfo%20Bezerra%20de%20Menezes%2C%20249%2C%20Araquari%20SC" target="_blank" rel="noopener">Abrir no Google Maps <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></a>
         </div>
         <div class="map-frame reveal">
           <iframe title="Mapa da localização da AironSul Metais em Araquari" src="https://www.google.com/maps?q=R.%20Dr.%20Adolfo%20Bezerra%20de%20Menezes%2C%20249%2C%20Araquari%20SC&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -299,7 +305,7 @@
           <span>Telefone</span>
           <a data-company="phone" data-company-link="phone" href="tel:+554734391072">(47) 3439-1072</a>
           <small>Araquari · Santa Catarina</small>
-          <a class="button button-primary" data-company-link="phone" href="tel:+554734391072">Entrar em contato <span aria-hidden="true">↗</span></a>
+          <a class="button button-primary" data-company-link="phone" href="tel:+554734391072">Entrar em contato <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></a>
         </div>
       </div>
     </section>
@@ -314,15 +320,15 @@
       <div><p class="footer-label">Navegação</p><nav aria-label="Navegação do rodapé"><a href="#empresa">Empresa</a><a href="#fundicao">Fundição</a><a href="#estrutura">Estrutura</a><a href="#galeria">Galeria</a><a href="#localizacao">Localização</a><a href="#contato">Contato</a></nav></div>
       <div class="footer-contact"><p class="footer-label">Contato</p><address>R. Dr. Adolfo Bezerra de Menezes, 249<br>Porto Grande · Araquari · SC<br>89245-000</address><a data-company-link="phone" href="tel:+554734391072" data-company="phone">(47) 3439-1072</a><span>CNPJ: <b data-company="cnpj">24.684.711/0001-90</b></span></div>
     </div>
-    <div class="shell footer-bottom"><span>© 2026 AironSul Metais. Todos os direitos reservados.</span><a href="#topo">Voltar ao topo ↑</a></div>
+    <div class="shell footer-bottom"><span>© 2026 AironSul Metais. Todos os direitos reservados.</span><a href="#topo">Voltar ao topo <svg class="icon" aria-hidden="true"><use href="#icon-up"></use></svg></a></div>
   </footer>
 
   <div class="mobile-quick-actions" aria-label="Ações rápidas">
-    <a data-company-link="phone" href="tel:+554734391072"><span aria-hidden="true">☎</span> Ligar</a>
-    <a href="#contato"><span aria-hidden="true">↗</span> Contato</a>
+    <a data-company-link="phone" href="tel:+554734391072"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg> Ligar</a>
+    <a href="#contato"><svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg> Contato</a>
   </div>
 
-  <button class="back-to-top" type="button" aria-label="Voltar ao topo"><span aria-hidden="true">↑</span></button>
+  <button class="back-to-top" type="button" aria-label="Voltar ao topo"><svg class="icon" aria-hidden="true"><use href="#icon-up"></use></svg></button>
 
   <dialog class="media-dialog" id="image-dialog" aria-label="Visualização ampliada">
     <button class="dialog-close" type="button" aria-label="Fechar imagem">×</button>
