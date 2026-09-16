@@ -22,6 +22,10 @@
     if (company.phoneHref) element.href = company.phoneHref;
   });
 
+  document.querySelectorAll('[data-company-link="whatsapp"]').forEach((element) => {
+    if (company.whatsappHref) element.href = company.whatsappHref;
+  });
+
   document.querySelectorAll('[data-company-link="maps"]').forEach((element) => {
     if (company.mapsUrl) element.href = company.mapsUrl;
   });

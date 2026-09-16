@@ -51,6 +51,7 @@
     <symbol id="icon-down" viewBox="0 0 24 24"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></symbol>
     <symbol id="icon-up" viewBox="0 0 24 24"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></symbol>
     <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"></path></symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8Z"></path><path d="M9 9.5c.8 2.2 2.3 3.7 4.5 4.5"></path></symbol>
     <symbol id="icon-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></symbol>
     <symbol id="icon-factory" viewBox="0 0 24 24"><path d="M3 21V9l6 3V9l6 3V4h4v17"></path><path d="M3 21h18"></path><path d="M7 17h1"></path><path d="M12 17h1"></path><path d="M17 17h1"></path></symbol>
     <symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="m21 15-5-5L5 21"></path></symbol>
@@ -71,7 +72,7 @@
         <a href="#localizacao">Localização</a>
         <a href="#contato">Contato</a>
       </nav>
-      <a class="header-cta" href="#contato">Fale conosco <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></a>
+      <a class="header-cta" data-company-link="whatsapp" href="https://wa.me/554734391072" target="_blank" rel="noopener">Fale no WhatsApp <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></a>
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span>
       </button>
@@ -106,7 +107,7 @@
           <p class="hero-lead">Conheça a estrutura, o processo produtivo e o trabalho desenvolvido pela AironSul Metais em Araquari, Santa Catarina.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#estrutura">Conheça nossa estrutura <svg class="icon" aria-hidden="true"><use href="#icon-down"></use></svg></a>
-            <a class="button button-ghost" href="#contato">Entre em contato</a>
+            <a class="button button-ghost" data-company-link="whatsapp" href="https://wa.me/554734391072" target="_blank" rel="noopener">Falar no WhatsApp</a>
           </div>
         </div>
         <div class="hero-side-label" aria-hidden="true">Araquari <i></i> SC</div>
@@ -307,10 +308,10 @@
           <p>Entre em contato e fale diretamente com nossa equipe.</p>
         </div>
         <div class="contact-panel reveal">
-          <span>Telefone</span>
-          <a data-company="phone" data-company-link="phone" href="tel:+554734391072">(47) 3439-1072</a>
+          <span>WhatsApp</span>
+          <a data-company="phone" data-company-link="whatsapp" href="https://wa.me/554734391072" target="_blank" rel="noopener">(47) 3439-1072</a>
           <small>Araquari · Santa Catarina</small>
-          <a class="button button-primary" data-company-link="phone" href="tel:+554734391072">Entrar em contato <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></a>
+          <a class="button button-primary" data-company-link="whatsapp" href="https://wa.me/554734391072" target="_blank" rel="noopener">Falar no WhatsApp <svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg></a>
         </div>
       </div>
     </section>
@@ -324,7 +325,7 @@
           <h2>Vamos conversar sobre sua necessidade em fundição?</h2>
         </div>
         <div class="footer-actions">
-          <a class="button footer-button-primary" data-company-link="phone" href="tel:+554734391072"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg> Ligar agora</a>
+          <a class="button footer-button-primary" data-company-link="whatsapp" href="https://wa.me/554734391072" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-message"></use></svg> Falar no WhatsApp</a>
           <a class="button footer-button-secondary" data-company-link="maps" href="https://www.google.com/maps/search/?api=1&query=R.%20Dr.%20Adolfo%20Bezerra%20de%20Menezes%2C%20249%2C%20Araquari%20SC" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg> Como chegar</a>
         </div>
       </div>
@@ -342,9 +343,9 @@
         </div>
         <div class="footer-contact">
           <p class="footer-label">Contato</p>
-          <a class="footer-contact-card" data-company-link="phone" href="tel:+554734391072">
-            <span class="footer-icon"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg></span>
-            <span><small>Telefone</small><strong data-company="phone">(47) 3439-1072</strong></span>
+          <a class="footer-contact-card" data-company-link="whatsapp" href="https://wa.me/554734391072" target="_blank" rel="noopener">
+            <span class="footer-icon"><svg class="icon" aria-hidden="true"><use href="#icon-message"></use></svg></span>
+            <span><small>WhatsApp</small><strong data-company="phone">(47) 3439-1072</strong></span>
           </a>
           <a class="footer-contact-card" data-company-link="maps" href="https://www.google.com/maps/search/?api=1&query=R.%20Dr.%20Adolfo%20Bezerra%20de%20Menezes%2C%20249%2C%20Araquari%20SC" target="_blank" rel="noopener">
             <span class="footer-icon"><svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg></span>
@@ -362,8 +363,8 @@
   </footer>
 
   <div class="mobile-quick-actions" aria-label="Ações rápidas">
-    <a data-company-link="phone" href="tel:+554734391072"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg> Ligar</a>
-    <a href="#contato"><svg class="icon" aria-hidden="true"><use href="#icon-up-right"></use></svg> Contato</a>
+    <a data-company-link="whatsapp" href="https://wa.me/554734391072" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-message"></use></svg> WhatsApp</a>
+    <a data-company-link="maps" href="https://www.google.com/maps/search/?api=1&amp;query=R.%20Dr.%20Adolfo%20Bezerra%20de%20Menezes%2C%20249%2C%20Araquari%20SC" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg> Como chegar</a>
   </div>
 
   <button class="back-to-top" type="button" aria-label="Voltar ao topo"><svg class="icon" aria-hidden="true"><use href="#icon-up"></use></svg></button>
